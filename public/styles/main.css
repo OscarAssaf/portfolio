@@ -20,7 +20,7 @@ body {
 
 /* nav bar */
 .nav {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
@@ -28,12 +28,12 @@ body {
     backdrop-filter: blur(10px);
     border-bottom: 1px solid #233554;
     padding: 12px 0;
-    z-index: 1000;
+    z-index: 5;
     transition: all 0.3s ease;
 }
 
 .nav-container {
-    max-width: 1200px;
+    max-width: 100vh;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -105,7 +105,7 @@ body {
 
 
 .hero {
-    min-height: 100vh;
+     min-height: 95vh;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -38,9 +38,9 @@
       ],
       "status": "completed",
       "links": {
-        "demo": "#",
+        "demo": null,
         "github": "https://github.com/OscarAssaf/CakesForYou",
-        "live": "#"
+        "live": null
       }
     },
     {
@@ -68,7 +68,7 @@
     },
     {
       "title": "Online Connect Four",
-      "description": "Real-time multiplayer Connect Four game with player registration, lobby system and gameinvitations.",
+      "description": "Real-time multiplayer Connect Four game with player registration, lobby system and game invitations.",
       "longDescription": "Features Firebase Firestore integration for real-time synchronization, win detection algorithms, and persistent player data storage.",
       "image": "public/assets/connectFour.png",
       "technologies": [
