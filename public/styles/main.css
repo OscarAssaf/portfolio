@@ -75,6 +75,54 @@ body {
     transition: color 0.3s ease;
 }
 
+/*Hamburger taken from Codepen and help with AI to integrate the correct animation*/
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+    width: 25px;
+    height: 20px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #64ffda;
+    transition: all 0.3s ease;
+    position: absolute;
+}
+
+.hamburger span:nth-child(1) {
+    top: 0;
+}
+
+.hamburger span:nth-child(2) {
+    top: 9px;
+}
+
+.hamburger span:nth-child(3) {
+    top: 18px;
+}
+
+/* Hamburger Animation helped with AI */
+.hamburger.active span:nth-child(1) {
+    top: 9px;
+    transform: rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    top: 9px;
+    transform: rotate(-45deg);
+}
+
+
 .link i {
     font-size: 1rem;
 }
@@ -310,30 +358,6 @@ body {
     text-align: center;
     padding: 40px 0;
     border-top: 1px solid #233554;
-}
-
-.more-about-link {
-    display: inline-block;
-    color: #64ffda;
-    text-decoration: none;
-    font-size: 1.1rem;
-    margin-bottom: 30px;
-    transition: all 0.3s ease;
-    position: relative;
-}
-
-.more-about-link:hover {
-    color: #ff6b9d;
-    transform: translateY(-2px);
-}
-
-.more-about-link::after {
-    content: ' →';
-    transition: transform 0.3s ease;
-}
-
-.more-about-link:hover::after {
-    transform: translateX(5px);
 }
 
 .social-links {
@@ -832,6 +856,51 @@ html {
     .tech-icon-img {
         width: 40px;
         height: 40px;
+    }
+      .hamburger {
+        display: flex;
+    }
+    
+    .nav-links {
+        position: fixed;
+        height:100vh;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        background: rgba(10, 25, 47, 0.98);
+        backdrop-filter: blur(10px);
+        border-left: 1px solid #233554;
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 30px;
+        transition: right 0.3s ease;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+    }
+    
+    .nav-links.active {
+        right: 0;
+    }
+    
+    .nav-links .link {
+        font-size: 1.2rem;
+        padding: 10px 0;
+        border-bottom: 1px solid #233554;
+        width: 100%;
+    }
+    
+    .nav-contact {
+        position: fixed;
+        bottom: 30px;
+        right: -100%;
+        width: 100%;
+        max-width: 300px;
+        padding: 0 20px;
+        justify-content: center;
+        transition: right 0.3s ease;
+    }
+    
+    .nav-contact.active {
+        right: 0;
     }
 }
 

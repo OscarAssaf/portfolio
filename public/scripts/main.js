@@ -251,3 +251,38 @@ document.addEventListener('DOMContentLoaded', async function () {
     projectManager.renderProjects(homeProjectsGrid, featuredProjects);
   }
 });
+
+
+// Hamburger menu 
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+const navContact = document.querySelector('.nav-contact');
+const links = document.querySelectorAll('.nav-links .link');
+
+if (hamburger) {
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('active');
+        navContact.classList.toggle('active');
+    });
+
+    // close when clicking a link
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('active');
+            navContact.classList.remove('active');
+        });
+    });
+
+    // close when clicking outside the box
+    document.addEventListener('click', (e) => {
+        if (!hamburger.contains(e.target) && 
+            !navLinks.contains(e.target) && 
+            !navContact.contains(e.target)) {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('active');
+            navContact.classList.remove('active');
+        }
+    });
+}
