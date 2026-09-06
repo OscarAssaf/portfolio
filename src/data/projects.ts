@@ -9,7 +9,6 @@ import notesApp from "../assets/noteapp.png";
 import minesweeper from "../assets/Minesweeper.png";
 import DevOps from "../assets/DevOps-fundamentals.png";
 import portfolio from "../assets/portfolio.png";
-import projectPlaceholder from "../assets/project-placeholder.svg";
 import tetris from "../assets/Tetris.png";
 import todoList from "../assets/todo_List.png";
 import weatherApp from "../assets/weatherApp.png";

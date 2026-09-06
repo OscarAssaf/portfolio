@@ -20,20 +20,71 @@ export const site = {
 
 export const skillGroups = [
   {
-    title: "Web development",
-    items: ["HTML5", "CSS3", "JavaScript", "TypeScript", "Express.js"],
+    title: "Programming languages",
+    items: [
+      { name: "C++", icon: "code", color: "#60a5fa" },
+      { name: "Java", icon: "code", color: "#fb923c" },
+      { name: "Python", icon: "code", color: "#60a5fa" },
+      { name: "JavaScript", icon: "javascript", color: "#facc15" },
+      { name: "TypeScript", icon: "typescript", color: "#60a5fa" },
+      { name: "HTML5", icon: "html5", color: "#f97316" },
+      { name: "CSS3", icon: "css3", color: "#38bdf8" },
+    ],
   },
   {
     title: "Mobile development",
-    items: ["Swift (iOS)", "Kotlin (Android)", "Push notifications", "Mobile UI/UX"],
+    items: [
+      { name: "Swift & SwiftUI", icon: "swift", color: "#fb7185" },
+      { name: "Kotlin", icon: "kotlin", color: "#c084fc" },
+      { name: "Flutter", icon: "flutter", color: "#38bdf8" },
+      { name: "iOS & Android", icon: "mobile", color: "#a5b4fc" },
+      { name: "Mobile UI/UX", icon: "layout", color: "#2dd4bf" },
+    ],
+  },
+  {
+    title: "Web development",
+    items: [
+      { name: "React", icon: "react", color: "#67e8f9" },
+      { name: "HTML5", icon: "html5", color: "#f97316" },
+      { name: "CSS3", icon: "css3", color: "#38bdf8" },
+    ],
   },
   {
     title: "Backend & data",
-    items: ["PostgreSQL", "MySQL", "Firebase", "Azure Data Studio", "REST APIs"],
+    items: [
+      { name: "Node.js", icon: "node", color: "#4ade80" },
+      { name: "Express.js", icon: "api", color: "#cbd5e1" },
+      { name: "REST APIs", icon: "api", color: "#22d3ee" },
+      { name: "PostgreSQL", icon: "database", color: "#60a5fa" },
+      { name: "MySQL", icon: "database", color: "#fbbf24" },
+    ],
   },
   {
-    title: "Tools",
-    items: ["Git", "Docker", "VS Code", "Qt Creator", "Figma"],
+    title: "Cloud & platforms",
+    items: [
+      { name: "AWS", icon: "aws", color: "#fbbf24" },
+      { name: "Microsoft Azure", icon: "azure", color: "#38bdf8" },
+      { name: "Firebase", icon: "firebase", color: "#facc15" },
+    ],
+  },
+  {
+    title: "Tools & frameworks",
+    items: [
+      { name: "Git", icon: "git", color: "#fb923c" },
+      { name: "GitHub", icon: "github", color: "#e2e8f0" },
+      { name: "Docker", icon: "docker", color: "#60a5fa" },
+      { name: "Figma", icon: "workflow", color: "#f472b6" },
+    ],
+  },
+  {
+    title: "Testing & DevOps",
+    items: [
+      { name: "Unit testing", icon: "test", color: "#f472b6" },
+      { name: "XCTest & Espresso", icon: "test", color: "#fb7185" },
+      { name: "CI/CD", icon: "pipeline", color: "#a78bfa" },
+      { name: "Git", icon: "git", color: "#fb923c" },
+      { name: "Jira", icon: "workflow", color: "#60a5fa" },
+    ],
   },
 ];
 
@@ -102,8 +153,14 @@ export const education = [
   {
     school: "Jönköping University",
     program: "B.Sc. Computer Engineering",
-    dates: "Graduated",
+    dates: "August 2023 - June 2026",
     detail:
-      "Specialized in software development and mobile platforms, with coursework covering systems, web, and native app development.",
+      "Degree of Bachelor of Science in Computer Engineering specializing in Software Engineering and Mobile Platforms. The education is msotly based on projects and excersies that provide practical experiences. Foocused a lot on understanding how computers work, computer networks strucutre, and fundamentals of computer science and mathematics. Also provided deep dinvess into mobile development, web development and computer networks. Technologies that was used was C, C++, Java, Python, React Native, Kotlin, Swift, data structures and algorithms, Object Orietned Programming (OOP) principles, networking concepts, Windows OS, Mac OS, Linux OS, HTML, CSS, JavaScrip, and Docker.",
+  },
+  {
+    school: "Erik Dahlbergsgymnasiet",
+    program: "Technology Programme ",
+    dates: "August 2023 - June 2023",
+    detail: "High school degree in technology programme with a specialization in information and media technology. Other than focus on operative systems such as Windows and Linux, I also learned about programming and web development in C#, HTML, CSS, JavaScript and got familiar with modern CSS frameworks such as Bootstrap, Skeleton, and Tailwind."
   },
 ];
