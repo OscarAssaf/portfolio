@@ -1,13 +1,22 @@
 import cakesForYou from "../assets/cakesForYou.png";
 import chess from "../assets/chessappmainpage.png";
 import connectFour from "../assets/connectFour.png";
+import measureMate from "../assets/measureMate.png";
+import flexiCharge from "../assets/flexiCharge.png";
+import fileOrganizer from "../assets/fileOrganizer.png";
 import jonkopingStores from "../assets/jonkopingStoresMainPage1.png";
 import notesApp from "../assets/noteapp.png";
+import minesweeper from "../assets/Minesweeper.png";
+import DevOps from "../assets/DevOps-fundamentals.png";
 import portfolio from "../assets/portfolio.png";
+import projectPlaceholder from "../assets/project-placeholder.svg";
+import tetris from "../assets/Tetris.png";
 import todoList from "../assets/todo_List.png";
 import weatherApp from "../assets/weatherApp.png";
+import bluetoothReader from "../assets/bluetoothReader.png";
 
-export type ProjectCategory = "web" | "mobile";
+
+export type ProjectCategory = "web" | "mobile" | "desktop" | "systems" | "devops";
 
 export type Project = {
   id: string;
@@ -89,6 +98,111 @@ export const projects: Project[] = [
     status: "completed",
     github: "https://github.com/OscarAssaf/JonkopingStores",
     featured: true,
+  },
+  {
+    id: "tetris",
+    slug: "tetris",
+    title: "Tetris",
+    summary:
+      "A browser-based Tetris game built with Blazor WebAssembly and .NET.",
+    description:
+      "A live Tetris game with a Blazor WebAssembly UI and a .NET backend foundation. The project uses C# and the ASP.NET Core ecosystem, with GitHub Actions handling the build and deployment workflow.",
+    outcome: "A playable web game with automated delivery through GitHub Actions.",
+    image: tetris,
+    gallery: [tetris],
+    technologies: ["C#", ".NET", "ASP.NET Core", "Blazor WebAssembly", "GitHub Actions"],
+    categories: ["web", "devops"],
+    status: "completed",
+    featured: true,
+  },
+  {
+    id: "minesweeper",
+    slug: "minesweeper",
+    title: "Minesweeper",
+    summary:
+      "A C++ and Qt Minesweeper game with an automatic solving feature.",
+    description:
+      "A desktop Minesweeper project built in C++ with Qt Creator. Alongside the regular game experience, it includes an auto-solving feature that can analyze the board and find safe moves.",
+    image: minesweeper,
+    gallery: [minesweeper],
+    technologies: ["C++", "Qt", "Qt Creator", "Algorithms", "Desktop UI"],
+    categories: ["desktop", "systems"],
+    status: "completed",
+    featured: true,
+  },
+  {
+    id: "measuremate",
+    slug: "measuremate",
+    title: "MeasureMate",
+    summary:
+      "A university and Husqvarna collaboration exploring robotic floor measurement.",
+    description:
+      "A collaboration with the university and Husqvarna to turn a robotic lawnmower into a floor-measuring robot. A LiDAR sensor tracks and maps rooms to help renovation projects estimate floor areas more efficiently.",
+    image: measureMate,
+    gallery: [measureMate],
+    technologies: ["Robotics", "LiDAR", "Mapping", "Sensors", "Husqvarna collaboration"],
+    categories: ["systems"],
+    status: "completed",
+    featured: true,
+  },
+  {
+    id: "flexicharge",
+    slug: "flexicharge",
+    title: "Flexicharge",
+    summary:
+      "Backend services for an EV charging system with AWS, CI/CD, and automated tests.",
+    description:
+      "A collaboration project for an electric vehicle charging system. I worked on the TypeScript backend, connected the AWS database, built and maintained CI/CD pipelines, supported backend uptime, and wrote tests for reliable delivery.",
+    image: flexiCharge,
+    gallery: [flexiCharge],
+    technologies: ["TypeScript", "AWS", "Backend", "CI/CD", "Automated testing"],
+    categories: ["web", "devops"],
+    status: "completed",
+    featured: true,
+  },
+  {
+    id: "file-organizer",
+    slug: "file-organizer",
+    title: "File Organizer",
+    summary:
+      "A C# and .NET utility that sorts cluttered folders into useful categories.",
+    description:
+      "A desktop utility that cleans up folders by grouping files into meaningful directories. Point it at a Downloads folder, for example, and it can move MP3s and similar files into an Audio folder for a more organized workspace.",
+    image: fileOrganizer,
+    gallery: [fileOrganizer],
+    technologies: ["C#", ".NET", "File systems", "Automation", "Desktop utility"],
+    categories: ["desktop", "systems"],
+    status: "completed",
+    featured: true,
+  },
+  {
+    id: "devops-fundamentals",
+    slug: "devops-fundamentals",
+    title: "DevOps Fundamentals",
+    summary:
+      "A cloud and testing project covering AWS, Docker, automation, and delivery practices.",
+    description:
+      "A school project focused on cloud hosting through AWS, Docker, and practical DevOps principles. It included a Python calculator and a broad testing strategy covering unit, API, end-to-end, frontend, and performance tests with PyTest, Playwright, and Locust.",
+    image: DevOps,
+    gallery: [DevOps],
+    technologies: ["AWS", "Docker", "Python", "PyTest", "Playwright", "Locust"],
+    categories: ["devops", "web"],
+    status: "completed",
+    featured: true,
+  },
+  {
+    id: "bluetooth-reader",
+    slug: "bluetooth-reader",
+    title: "Bluetooth Reader",
+    summary:
+      "A Flutter app for exploring nearby Bluetooth signal strength and dead zones.",
+    description:
+      "A Flutter learning project that scans nearby Bluetooth devices and lets users select a device to monitor. It visualizes live connection strength so users can discover dead zones around their phone or laptop without creating a map of their physical location.",
+    image: bluetoothReader,
+    gallery: [bluetoothReader],
+    technologies: ["Flutter", "Dart", "Bluetooth", "Mobile UI", "Live data"],
+    categories: ["mobile"],
+    status: "completed",
   },
   {
     id: "cakes-for-you",

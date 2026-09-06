@@ -9,6 +9,9 @@ const filters: { id: "all" | ProjectCategory; label: string }[] = [
   { id: "all", label: "All projects" },
   { id: "web", label: "Web development" },
   { id: "mobile", label: "Mobile apps" },
+  { id: "desktop", label: "Desktop apps" },
+  { id: "systems", label: "Systems & robotics" },
+  { id: "devops", label: "DevOps" },
 ];
 
 export function ProjectsPage() {

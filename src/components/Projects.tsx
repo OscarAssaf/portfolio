@@ -11,11 +11,9 @@ import { SectionHeading } from "./ui";
 
 export function Projects() {
   const featured = getFeaturedProjects();
-  const spotlight = featured.find((project) => project.spotlight) ?? featured[0];
-  const restFeatured = featured.filter((project) => project.id !== spotlight?.id);
   const gallery = getGalleryProjects();
 
-  if (!spotlight) {
+  if (featured.length === 0) {
     return null;
   }
 
@@ -39,11 +37,8 @@ export function Projects() {
           </Link>
         </div>
 
-        <div className="mt-10 grid gap-5 lg:grid-cols-2">
-          <motion.div className="lg:row-span-2" variants={fadeUpItem}>
-            <ProjectCard project={spotlight} spotlight />
-          </motion.div>
-          {restFeatured.map((project) => (
+        <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          {featured.map((project) => (
             <motion.div key={project.id} variants={fadeUpItem}>
               <ProjectCard project={project} />
             </motion.div>
