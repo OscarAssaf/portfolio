@@ -17,7 +17,7 @@ export function Hero() {
           className="text-sm font-semibold tracking-[0.28em] text-sky-200 uppercase"
           variants={fadeUpItem}
         >
-          Hello — I&apos;m
+          Hello,  I&apos;m
         </motion.p>
         <motion.h1
           className="text-5xl font-bold tracking-tight text-white sm:text-7xl"

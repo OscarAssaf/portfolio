@@ -7,9 +7,9 @@ export const site = {
   linkedin: "https://linkedin.com/in/oscarassaf",
   headline: "Software Development and Mobile Platforms",
   intro: [
-    "Fullstack developer with mobile and web experience. I like building products that people can actually use — from native apps to APIs and admin dashboards.",
-    "I work across C++, Swift, Kotlin, Java, JavaScript, and TypeScript, with a strong base in databases, REST APIs, and real-time features.",
-    "Always interested in learning new technologies and shipping the next thing a little cleaner than the last.",
+    "I am a self driven software engineer with experience in building both cross-platform application for both mobile and web. I like building applications that people actually use everyday.",
+    "I work across various programming languages, with a strong base in databases, REST APIs, backend, and system integration, where I always aim to create solutions with real-time features.",
+    "Personally I am always interested in learning new technologies and my journey in the tech industry has been driven by curiosity and a constant desire to learn and innovate."
   ],
   highlights: [
     "B.Sc. Computer Engineering graduate specializing in Software Development and Mobile Platforms",
