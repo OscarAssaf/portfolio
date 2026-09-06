@@ -18,7 +18,7 @@ export function About() {
         <motion.img
           src={profileImage}
           alt={site.name}
-          className="h-[420px] w-full rounded-3xl object-cover object-top ring-1 ring-white/10 shadow-2xl"
+          className="h-auto max-h-[620px] w-full rounded-3xl object-contain object-top ring-1 ring-white/10 shadow-2xl"
           variants={fadeUpItem}
         />
         <motion.div variants={staggerContainer}>
