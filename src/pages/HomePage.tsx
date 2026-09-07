@@ -23,8 +23,8 @@ export function HomePage() {
       <Hero />
       <About />
       <Projects />
-      <Experience />
       <Skills />
+      <Experience />
       <Contact />
     </>
   );

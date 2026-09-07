@@ -6,7 +6,7 @@ import {
   IconX,
 } from "@tabler/icons-react";
 import { useState } from "react";
-import { Link, NavLink } from "react-router";
+import { Link } from "react-router";
 
 import { site } from "../data/site";
 
@@ -38,14 +38,6 @@ export function Nav() {
               {link.label}
             </Link>
           ))}
-          <NavLink
-            to="/projects"
-            className={({ isActive }) =>
-              `text-sm font-semibold transition hover:text-sky-200 ${isActive ? "text-sky-200" : "text-slate-200"}`
-            }
-          >
-            Gallery
-          </NavLink>
         </nav>
 
         <div className="hidden items-center gap-3 md:flex">
@@ -99,13 +91,6 @@ export function Nav() {
                 {link.label}
               </Link>
             ))}
-            <NavLink
-              to="/projects"
-              className="text-base font-semibold text-white"
-              onClick={() => setOpen(false)}
-            >
-              Gallery
-            </NavLink>
           </div>
         </div>
       ) : null}

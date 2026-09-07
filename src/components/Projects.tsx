@@ -1,19 +1,12 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router";
 
-import {
-  getFeaturedProjects,
-  getGalleryProjects,
-} from "../data/projects";
+import { projects } from "../data/projects";
 import { fadeUpItem, staggerContainer, viewportOnce } from "../shared/motion";
 import { ProjectCard } from "./ProjectCard";
 import { SectionHeading } from "./ui";
 
 export function Projects() {
-  const featured = getFeaturedProjects();
-  const gallery = getGalleryProjects();
-
-  if (featured.length === 0) {
+  if (projects.length === 0) {
     return null;
   }
 
@@ -27,36 +20,14 @@ export function Projects() {
       viewport={viewportOnce}
     >
       <div className="mx-auto max-w-6xl">
-        <div className="flex flex-wrap items-end justify-between gap-4">
-          <SectionHeading>Projects</SectionHeading>
-          <Link
-            to="/projects"
-            className="text-sm font-semibold text-sky-200 hover:text-sky-100"
-          >
-            View full gallery →
-          </Link>
-        </div>
+        <SectionHeading>Projects</SectionHeading>
 
         <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-          {featured.map((project) => (
+          {projects.map((project) => (
             <motion.div key={project.id} variants={fadeUpItem}>
               <ProjectCard project={project} />
             </motion.div>
           ))}
-        </div>
-
-        <div className="mt-16">
-          <h3 className="text-2xl font-semibold text-white">More projects</h3>
-          <p className="mt-2 text-slate-400">
-            A horizontal gallery for the rest of the work.
-          </p>
-          <div className="mt-6 flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory">
-            {gallery.map((project) => (
-              <div key={project.id} className="w-[300px] shrink-0 sm:w-[340px]">
-                <ProjectCard project={project} compact />
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </motion.section>

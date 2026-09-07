@@ -13,13 +13,13 @@ export function ProjectDetailPage() {
   const images = useMemo(() => project?.gallery ?? [], [project]);
 
   if (!project) {
-    return <Navigate to="/projects" replace />;
+    return <Navigate to="/#projects" replace />;
   }
 
   return (
     <article className="mx-auto max-w-5xl px-4 py-16 sm:px-6">
-      <Link to="/projects" className="text-sm font-semibold text-sky-200">
-        ← Back to gallery
+      <Link to="/#projects" className="text-sm font-semibold text-sky-200">
+        ← Back to projects
       </Link>
       <div className="mt-6 flex flex-wrap items-center gap-3">
         <h1 className="text-4xl font-bold text-white">{project.title}</h1>
@@ -27,7 +27,9 @@ export function ProjectDetailPage() {
           {project.status === "in-progress" ? "In progress" : "Completed"}
         </span>
       </div>
-      <p className="mt-4 max-w-3xl text-lg text-slate-300">{project.description}</p>
+      <p className="mt-4 max-w-3xl whitespace-pre-line text-lg text-slate-300">
+        {project.description}
+      </p>
       {project.outcome ? (
         <p className="mt-3 text-sky-200">{project.outcome}</p>
       ) : null}
