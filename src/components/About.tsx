@@ -14,7 +14,7 @@ export function About() {
       whileInView="visible"
       viewport={viewportOnce}
     >
-      <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-2">
+      <div className="mx-auto grid max-w-6xl items-center gap-10 rounded-3xl border border-white/15 p-6 shadow-2xl sm:p-10 lg:grid-cols-2">
         <motion.img
           src={profileImage}
           alt={site.name}
