@@ -22,41 +22,52 @@ export const skillGroups = [
   {
     title: "Programming languages",
     items: [
-      { name: "C++", icon: "code", color: "#60a5fa" },
-      { name: "Java", icon: "code", color: "#fb923c" },
-      { name: "Python", icon: "code", color: "#60a5fa" },
-      { name: "JavaScript", icon: "javascript", color: "#facc15" },
-      { name: "TypeScript", icon: "typescript", color: "#60a5fa" },
-      { name: "HTML5", icon: "html5", color: "#f97316" },
-      { name: "CSS3", icon: "css3", color: "#38bdf8" },
+      { name: "C++", icon: "code", color: "#00599c" },
+      { name: "C", icon: "c", color: "#a8b9cc" },
+      { name: "C#", icon: "csharp", color: "#68217a" },
+      { name: "Java", icon: "java", color: "#f89820" },
+      { name: "Python", icon: "python", color: "#3776ab" },
+      { name: "JavaScript", icon: "javascript", color: "#f7df1e" },
+      { name: "TypeScript", icon: "typescript", color: "#3178c6" },
+      { name: "HTML5", icon: "html5", color: "#e34f26" },
+      { name: "CSS3", icon: "css3", color: "#1572b6" },
+      { name: ".NET", icon: "dotnet", color: "#512bd4" },
     ],
   },
   {
     title: "Mobile development",
     items: [
-      { name: "Swift & SwiftUI", icon: "swift", color: "#fb7185" },
-      { name: "Kotlin", icon: "kotlin", color: "#c084fc" },
-      { name: "Flutter", icon: "flutter", color: "#38bdf8" },
-      { name: "iOS & Android", icon: "mobile", color: "#a5b4fc" },
+      { name: "Swift", icon: "swift", color: "#f05138" },
+      { name: "SwiftUI", icon: "swiftui", color: "#0a84ff" },
+      { name: "Kotlin", icon: "kotlin", color: "#7f52ff" },
+      { name: "Flutter", icon: "flutter", color: "#02569b" },
+      { name: "iOS", icon: "ios", color: "#f5f5f7" },
+      { name: "Android", icon: "android", color: "#3ddc84" },
+      { name: "Xcode", icon: "xcode", color: "#147efb" },
+      { name: "Android Studio", icon: "androidstudio", color: "#3ddc84" },
+      { name: "Jetpack Compose", icon: "jetpackcompose", color: "#4285f4" },
       { name: "Mobile UI/UX", icon: "layout", color: "#2dd4bf" },
     ],
   },
   {
     title: "Web development",
     items: [
-      { name: "React", icon: "react", color: "#67e8f9" },
-      { name: "HTML5", icon: "html5", color: "#f97316" },
-      { name: "CSS3", icon: "css3", color: "#38bdf8" },
+      { name: "React", icon: "react", color: "#61dafb" },
+      { name: "HTML5", icon: "html5", color: "#e34f26" },
+      { name: "CSS3", icon: "css3", color: "#1572b6" },
     ],
   },
   {
-    title: "Backend & data",
+    title: "Backend & databases",
     items: [
-      { name: "Node.js", icon: "node", color: "#4ade80" },
-      { name: "Express.js", icon: "api", color: "#cbd5e1" },
+      { name: "Node.js", icon: "node", color: "#339933" },
+      { name: "Express.js", icon: "express", color: "#f0f0f0" },
       { name: "REST APIs", icon: "api", color: "#22d3ee" },
-      { name: "PostgreSQL", icon: "database", color: "#60a5fa" },
-      { name: "MySQL", icon: "database", color: "#fbbf24" },
+      { name: "PostgreSQL", icon: "postgresql", color: "#4169e1" },
+      { name: "MySQL", icon: "mysql", color: "#4479a1" },
+      { name: "MongoDB", icon: "mongodb", color: "#47a248" },
+      { name: "PyTorch", icon: "pytorch", color: "#ee4c2c" },
+      { name: "Azure Data Studio", icon: "database", color: "#0078d4" },
     ],
   },
   {
@@ -70,10 +81,10 @@ export const skillGroups = [
   {
     title: "Tools & frameworks",
     items: [
-      { name: "Git", icon: "git", color: "#fb923c" },
-      { name: "GitHub", icon: "github", color: "#e2e8f0" },
-      { name: "Docker", icon: "docker", color: "#60a5fa" },
-      { name: "Figma", icon: "workflow", color: "#f472b6" },
+      { name: "Git", icon: "git", color: "#f05032" },
+      { name: "GitHub", icon: "github", color: "#f0f0f0" },
+      { name: "Docker", icon: "docker", color: "#2496ed" },
+      { name: "Figma", icon: "figma", color: "#f24e1e" },
     ],
   },
   {
@@ -81,9 +92,9 @@ export const skillGroups = [
     items: [
       { name: "Unit testing", icon: "test", color: "#f472b6" },
       { name: "XCTest & Espresso", icon: "test", color: "#fb7185" },
-      { name: "CI/CD", icon: "pipeline", color: "#a78bfa" },
-      { name: "Git", icon: "git", color: "#fb923c" },
-      { name: "Jira", icon: "workflow", color: "#60a5fa" },
+      { name: "CI/CD", icon: "githubactions", color: "#2088ff" },
+      { name: "Git", icon: "git", color: "#f05032" },
+      { name: "Jira", icon: "jira", color: "#0052cc" },
     ],
   },
 ];
@@ -113,10 +124,10 @@ export const experience = [
   {
     title: "Electrical Assembler",
     company: "FläktGroup, Jönköping",
-    dates: "June 2026 – Present",
+    dates: "June 2026 – August 2026",
     points: [
-      "Assembled and wired electrical components from diagrams and schematics, and troubleshot systems to confirm correct functionality.",
-      "Programmed and integrated software into electrical cabinets and ventilation units, then ran system tests to verify hardware and software interaction.",
+      "Assembled and connected electrical components according to drawings and performed troubleshooting to ensure proper functioning of the systems.",
+      "Programmed and integrated software into electrical cabinets and fan units, also performed system tests to verify that hardware and software worked as intended.",
     ],
   },
   {
@@ -124,9 +135,9 @@ export const experience = [
     company: "Jönköping Tekniska Högskola",
     dates: "March 2025 – June 2025",
     points: [
-      "Built an AI system that analyzes uploaded research articles, extracts key findings, and evaluates research methodologies using GPT-4o-mini.",
-      "Backend in JavaScript with Express and REST APIs: PDF upload handling, DOI extraction, and export to PDF/Excel.",
-      "Integrated GPT-4o-mini and used prompt engineering to get more accurate, consistent evaluations and reduce hallucinations.",
+      "Developed an AI tool to help researchers evaluate and categorize scientific articles, which led to previously manual processes being automated.",
+      "Built backend in JavaScript with REST API:s and Webhooks to manage real time events.",
+      "Trained and optimized the AI by performing structured needs analysis and flowcharts to improve the quality of responses and its accuracy.",
     ],
   },
   {
@@ -134,9 +145,8 @@ export const experience = [
     company: "Kjell & Company, Jönköping",
     dates: "March 2023 – March 2025",
     points: [
-      "Delivered technical customer guidance in-store.",
-      "Handled logistics: orders, inventory, receiving, packing, and returns.",
-      "Kept the store presentation and workflow running smoothly.",
+      "Helped customers in understanding and solving their technical problems through needs analysis, practical troubleshooting and clear communication.",
+      "I was also responsible for the maintenance of the store in terms of displays, returns, deliveries and inventory management, with the ultimate goal of always creating a positive customer experience.",
     ],
   },
   {
@@ -144,7 +154,7 @@ export const experience = [
     company: "Max Burgers, Jönköping",
     dates: "April 2022 – April 2023",
     points: [
-      "Kept service moving under high customer flow with a structured, problem-solving approach.",
+      "Worked with keeping fast-paced customer flow running smoothly through utilizing my quick problem-solving skills and structured ways of working.",
     ],
   },
 ];

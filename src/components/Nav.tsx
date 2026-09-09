@@ -23,30 +23,30 @@ export function Nav() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-[#07070b]/80 backdrop-blur-xl">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
-        <Link to="/" className="text-lg font-bold tracking-tight text-teal-300">
+      <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-4 sm:px-6">
+        <Link to="/" className="text-xl font-bold tracking-tight text-teal-300">
           {site.firstName}
         </Link>
 
-        <nav className="hidden items-center gap-6 md:flex">
+        <nav className="hidden items-center gap-8 md:flex">
           {links.map((link) => (
             <Link
               key={link.hash}
               to={{ pathname: "/", hash: link.hash }}
-              className="text-sm font-semibold text-slate-200 transition hover:text-sky-200"
+              className="text-base font-semibold text-slate-200 transition hover:text-sky-200"
             >
               {link.label}
             </Link>
           ))}
         </nav>
 
-        <div className="hidden items-center gap-3 md:flex">
+        <div className="hidden items-center gap-4 md:flex">
           <a
             href={`mailto:${site.email}`}
             aria-label="Email"
             className="text-slate-300 transition hover:text-white"
           >
-            <IconMail size={20} />
+            <IconMail size={24} />
           </a>
           <a
             href={site.github}
@@ -55,7 +55,7 @@ export function Nav() {
             aria-label="GitHub"
             className="text-slate-300 transition hover:text-white"
           >
-            <IconBrandGithub size={20} />
+            <IconBrandGithub size={24} />
           </a>
           <a
             href={site.linkedin}
@@ -64,28 +64,28 @@ export function Nav() {
             aria-label="LinkedIn"
             className="text-slate-300 transition hover:text-white"
           >
-            <IconBrandLinkedin size={20} />
+            <IconBrandLinkedin size={24} />
           </a>
         </div>
 
         <button
           type="button"
-          className="rounded-lg p-2 text-white md:hidden"
+          className="rounded-lg p-3 text-white md:hidden"
           aria-label={open ? "Close menu" : "Open menu"}
           onClick={() => setOpen((value) => !value)}
         >
-          {open ? <IconX /> : <IconMenu2 />}
+          {open ? <IconX size={26} /> : <IconMenu2 size={26} />}
         </button>
       </div>
 
       {open ? (
-        <div className="border-t border-white/10 px-4 py-4 md:hidden">
-          <div className="flex flex-col gap-3">
+        <div className="border-t border-white/10 px-4 py-5 md:hidden">
+          <div className="flex flex-col gap-4">
             {links.map((link) => (
               <Link
                 key={link.hash}
                 to={{ pathname: "/", hash: link.hash }}
-                className="text-base font-semibold text-white"
+                className="text-lg font-semibold text-white"
                 onClick={() => setOpen(false)}
               >
                 {link.label}

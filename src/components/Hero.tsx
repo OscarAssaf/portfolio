@@ -44,10 +44,10 @@ export function Hero() {
         </motion.ul>
         <motion.div className="flex flex-wrap gap-3" variants={fadeUpItem}>
           <a
-            href="#projects"
+            href="#about"
             className="rounded-full bg-sky-500 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-sky-400"
           >
-            View projects
+            More about me
           </a>
           <a
             href="#contact"

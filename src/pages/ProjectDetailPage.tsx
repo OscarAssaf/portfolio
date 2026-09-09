@@ -5,6 +5,8 @@ import { GalleryLightbox } from "../components/GalleryLightbox";
 import { PrimaryLink, SecondaryLink, Tag } from "../components/ui";
 import { getProjectBySlug } from "../data/projects";
 
+//To add more images : src/data/projects.ts under gallery section
+
 export function ProjectDetailPage() {
   const { slug } = useParams();
   const project = slug ? getProjectBySlug(slug) : undefined;
@@ -63,10 +65,9 @@ export function ProjectDetailPage() {
         ))}
       </div>
       <p className="mt-4 text-sm text-slate-500">
-        Click an image to open the gallery. Add more screenshots in{" "}
-        <code className="text-slate-300">src/data/projects.ts</code> under{" "}
-        <code className="text-slate-300">gallery</code>.
-      </p>
+        Click an image to open the gallery.
+      </p> 
+
 
       {activeIndex !== null ? (
         <GalleryLightbox

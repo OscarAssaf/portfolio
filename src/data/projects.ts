@@ -4,11 +4,16 @@ import connectFour from "../assets/connectFour.png";
 import measureMate from "../assets/measureMate.png";
 import flexiCharge from "../assets/flexiCharge.png";
 import fileOrganizer from "../assets/fileOrganizer.png";
-import jonkopingStores from "../assets/jonkopingStoresMainPage1.png";
+import jonkopingStoresMainPage from "../assets/JonkopingStores/jonkopingStoresMainPage.png";
+import jonkopingStoresAddStore from "../assets/JonkopingStores/JonkopingStoresAddStore.png";
+import jonkopingStoresSearchStore from "../assets/JonkopingStores/JonkopingStoresSearchStore.png";
+import jonkopingStoresSignin from "../assets/JonkopingStores/JonkopingStoresSignin.png";
+import jonkopingStoresStoreList from "../assets/JonkopingStores/JonkopingStoresStores.png";
 import notesApp from "../assets/noteapp.png";
 import minesweeper from "../assets/Minesweeper.png";
 import DevOps from "../assets/DevOps-fundamentals.png";
 import portfolio from "../assets/portfolio.png";
+import portfolioLegacy from "../assets/portfolio-legacy.png";
 import tetris from "../assets/Tetris.png";
 import todoList from "../assets/todo_List.png";
 import weatherApp from "../assets/weatherApp.png";
@@ -83,8 +88,14 @@ export const projects: Project[] = [
       "Fullstack web application for discovering and managing local businesses in Jönköping City. Built with Vue.js, JavaScript, HTML, and a PostgreSQL, which all was contained in Docker. ",
     description:
       "A fullstack web app for discovering local businesses and stores in Jönköping city. The website was built using JavaScript and Vue.js framework for the frontend, and a PostgreSQL database running in a Docker container serving as the backend.\n\nIt also utilized a custom REST API with Node.js and Express.js which made it capable for authorized users to have access to Create, Read, Update and Delete (CRUD) permissions in the administration panel.",
-    image: jonkopingStores,
-    gallery: [jonkopingStores],
+    image: jonkopingStoresMainPage,
+    gallery: [
+      jonkopingStoresMainPage,
+      jonkopingStoresStoreList,
+      jonkopingStoresSignin,
+      jonkopingStoresAddStore,
+      jonkopingStoresSearchStore,
+    ],
     technologies: [
       "Admin dashboard",
       "PostgreSQL",
@@ -111,6 +122,8 @@ export const projects: Project[] = [
     technologies: ["C#", ".NET", "ASP.NET Core", "Blazor WebAssembly", "GitHub Actions"],
     categories: ["web", "devops"],
     status: "completed",
+    live: "https://oscarassaf.github.io/Tetris/",
+    github: "https://github.com/OscarAssaf/Tetris",
     featured: true,
   },
   {
@@ -280,14 +293,15 @@ export const projects: Project[] = [
     status: "completed",
     github: "https://github.com/OscarAssaf/Note_Taking_App",
   },
-  {
+
+    {
     id: "portfolio",
     slug: "portfolio",
     title: "Portfolio Website",
     summary:
-      "This site — a React rebuild with a project gallery, filters, and case-study pages.",
+      "This site, a website built with Vite, React, TypeScript and Tailwind",
     description:
-      "Personal portfolio showcasing projects, experience, and skills. The current version is a React + TypeScript + Tailwind rebuild with consistent project imagery, a gallery, and data-driven project pages so new work is easy to add.",
+      "Personal portfolio showcasing projects my experience and skills. The website was built using Vite, React, TypeScript and Tailwind with consistent project imagery, a gallery, and data-driven project pages so new work is easy to add.",
     image: portfolio,
     gallery: [portfolio],
     technologies: ["React", "TypeScript", "Tailwind CSS", "Vite"],
@@ -296,6 +310,20 @@ export const projects: Project[] = [
     github: "https://github.com/OscarAssaf/Portfolio",
     live: "https://oscarassaf.github.io/portfolio/",
   },
+  {
+    id: "portfolio-legacy",
+    slug: "portfolio-legacy",
+    title: "Portfolio-legacy",
+    summary:
+      "My old portfolio website built to showcase my projects and skills.",
+    description:
+      "My old previous portfolio website built for showcasing my projects and skills. Built with HTML, CSS, and JavaScript with smooth animations, interactive elements, and a responsive layout for any screen size.\n\nI rebuilt it to use more modern frontend tools, as this project was mainly created to learn the basics of web development.",
+    image: portfolioLegacy,
+    gallery: [portfolioLegacy],
+    technologies: ["HTML", "CSS", "JavaScript"],
+    categories: ["web"],
+    status: "completed",
+  }
 ];
 
 export function getProjectBySlug(slug: string) {
