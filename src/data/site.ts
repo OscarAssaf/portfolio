@@ -170,7 +170,7 @@ export const education = [
   {
     school: "Erik Dahlbergsgymnasiet",
     program: "Technology Programme ",
-    dates: "August 2023 - June 2023",
+    dates: "August 2020 - June 2023",
     detail: "High school degree in technology programme with a specialization in information and media technology. Other than focus on operative systems such as Windows and Linux, I also learned about programming and web development in C#, HTML, CSS, JavaScript and got familiar with modern CSS frameworks such as Bootstrap, Skeleton, and Tailwind."
   },
 ];
