@@ -17,7 +17,7 @@ export function Projects() {
       variants={staggerContainer}
       initial="hidden"
       whileInView="visible"
-      viewport={viewportOnce}
+      viewport={{ ...viewportOnce, amount: 0.05 }}
     >
       <div className="mx-auto max-w-6xl">
         <SectionHeading>Projects</SectionHeading>
